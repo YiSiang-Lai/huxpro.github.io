@@ -15,7 +15,6 @@ tags:
 * 一旦List size >= 1之後容量至少為4
 * array中的資料設null才能GC
 * base on array
-* pop push
 
 ## Linked List
 * 
