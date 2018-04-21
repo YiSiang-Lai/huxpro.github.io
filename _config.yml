@@ -59,7 +59,7 @@ netease_comment: false
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "喜歡寫代碼，追求美麗的畫面<br>在遊戲製作這條道路上，希望能多結交些朋友，歡迎找我一起探討遊戲製作的各種問題"
-#sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/ren_avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
