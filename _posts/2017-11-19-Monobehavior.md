@@ -28,6 +28,6 @@ fixed3 hash33(fixed3 p)
     return -1.0 + 2.0 * frac(fixed3((p.x + p.y) * p.z, (p.x + p.z) * p.y, (p.y + p.z) * p.x));
 }
 ```
-1. $$ c^2+\sqrt{1+2}$$ 
+ $$ c^2+\sqrt{1+2}$$(1)
   
- $$ E = m\cdot{c^2}$$
+ $$ E = m\cdot{c^2}$$(2)
