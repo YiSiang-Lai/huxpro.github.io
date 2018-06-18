@@ -9,9 +9,9 @@ tags:
     - GameMath
 ---
 
-## <b>Value Noise</b>
+## **Value Noise**
 
-## <b>Perlin Nois</b>
+## **Perlin Nois**
 
 <!--數學算式寫法參考
 https://goessner.github.io/markdown-it-texmath/markdown-it-texmath-demo.html
@@ -29,6 +29,6 @@ fixed3 hash33(fixed3 p)
 }
 ```
 
- $$c^2+\sqrt{1+2}$$
+ $c^2+\sqrt{1+2}$&emsp;**(1)**
   
- $$E = m\cdot{c^2}$$(2)
+ $E = m\cdot{c^2}$&emsp;**(2)**
