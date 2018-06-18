@@ -15,7 +15,7 @@ tags:
 <!--數學算式寫法參考
 https://goessner.github.io/markdown-it-texmath/markdown-it-texmath-demo.html
 -->
-  $$c^2+\sqrt{1+2}$$1.FixedUpdate和Update
+  $$c^2+\sqrt{1+2}$$
 
 ``` csharp
 fixed3 hash33(fixed3 p)
@@ -28,4 +28,4 @@ fixed3 hash33(fixed3 p)
     return -1.0 + 2.0 * frac(fixed3((p.x + p.y) * p.z, (p.x + p.z) * p.y, (p.y + p.z) * p.x));
 }
 ```
-  $$c^2+\sqrt{1+2}$$1.FixedUpdate和Update
+  $$c^2+\sqrt{1+2}$
