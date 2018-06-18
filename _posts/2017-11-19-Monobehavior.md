@@ -31,7 +31,7 @@ fixed3 hash33(fixed3 p)
   $$c^2+\sqrt{1+2}$$(1)
   
 
-  $$ E = m\cdot c^2 \label{eq:mc2}$$
+  $$ E = m\cdot c^2 $$ \label{eq:mc2}
 
   Let 
   $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
