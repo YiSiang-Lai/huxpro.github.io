@@ -28,4 +28,6 @@ fixed3 hash33(fixed3 p)
     return -1.0 + 2.0 * frac(fixed3((p.x + p.y) * p.z, (p.x + p.z) * p.y, (p.y + p.z) * p.x));
 }
 ```
-  $$c^2+\sqrt{1+2}$
+  $c^2+\sqrt{1+2}$
+
+  Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
