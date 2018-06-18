@@ -12,14 +12,12 @@ tags:
 ## <b>Value Noise</b>
 
 ## <b>Perlin Nois</b>  
-* 
 <!--數學算式寫法參考
 https://goessner.github.io/markdown-it-texmath/markdown-it-texmath-demo.html
 -->
-$$c^2+\sqrt{1+2}$$(1)
-1.FixedUpdate和Update
+  $$c^2+\sqrt{1+2}$$1.FixedUpdate和Update
 
-``` glsl
+``` csharp
 fixed3 hash33(fixed3 p)
 {
     fixed3 mod = fixed3(0.1031, 0.11369, 0.13787);
