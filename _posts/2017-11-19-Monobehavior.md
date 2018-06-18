@@ -1,34 +1,32 @@
 ---
 layout:     post
-title:      " Unity MonoBehaviour Life Time"
-date:       2018-04-20
+title:      "初探Noise"
+date:       2018-06-19
 author:     "Ren"
 header-img: "img/post-bg-miui6.jpg"
 tags:
     - Unity
+    - GameMath
 ---
 
-### 資料結構
+## <b>Value Noise</b>
 
-## List Stack Queue
-* 內部Catch了一個T[0]陣列,供construct時沒指定Capcity時重複使用
-* 一旦List size >= 1之後容量至少為4
-* array中的資料設null才能GC
-
-## Linked List
+## <b>Perlin Nois</b>  
 * 
-
+<!--數學算式寫法參考
+https://goessner.github.io/markdown-it-texmath/markdown-it-texmath-demo.html
+-->
+$$c^2+\sqrt{1+2}$$(1)
 1.FixedUpdate和Update
 
-``` python
-@requires_authorization
-def somefunc(param1='', param2=0):
-    '''A docstring'''
-    if param1 > param2: # interesting
-        print 'Greater'
-    return (param2 - param1 + 1) or None
-class SomeClass:
-    pass
->>> message = '''interpreter
-... prompt''
+``` glsl
+fixed3 hash33(fixed3 p)
+{
+    fixed3 mod = fixed3(0.1031, 0.11369, 0.13787);
+
+    p = frac(p * mod);
+    p += dot(p, p.yxz + 19.19);
+
+    return -1.0 + 2.0 * frac(fixed3((p.x + p.y) * p.z, (p.x + p.z) * p.y, (p.y + p.z) * p.x));
+}
 ```
