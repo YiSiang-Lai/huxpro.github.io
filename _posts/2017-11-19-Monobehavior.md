@@ -28,8 +28,7 @@ fixed3 hash33(fixed3 p)
     return -1.0 + 2.0 * frac(fixed3((p.x + p.y) * p.z, (p.x + p.z) * p.y, (p.y + p.z) * p.x));
 }
 ```
-  $c^2+\sqrt{1+2}$
+  $$c^2+\sqrt{1+2}$$
 
-  Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
-
-  <a href="https://www.codecogs.com/eqnedit.php?latex=Let&space;$\text{S}1(N)&space;=&space;\sum{p=1}^N&space;\text{E}(p)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Let&space;$\text{S}1(N)&space;=&space;\sum{p=1}^N&space;\text{E}(p)$" title="Let $\text{S}1(N) = \sum{p=1}^N \text{E}(p)$" /></a>
+  Let 
+  $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
