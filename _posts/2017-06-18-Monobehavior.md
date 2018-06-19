@@ -8,6 +8,15 @@ tags:
     - Unity
     - GameMath
 ---
+
+<!-- TOC -->
+
+- [**Preface**](#preface)
+- [**Value Noise**](#value-noise)
+- [**Perlin Noise**](#perlin-noise)
+
+<!-- /TOC -->
+
 ## **Preface**
 在閱讀場景消融相關文章時,看到其中有個做法是使用3D Noise的方式,來解決直接使用Noise texture,會在不同物體或面的接合處不連續的問題,以往都只是直接上網找texture來使用,決定透過這次機會了解Noise生成的基本原理。
 
@@ -20,14 +29,6 @@ Value Noise算法是基於Lattice的,每個pixel都會在其中一個Lattice中,
 
 關於隨機值得部分,會需要當input相等時,隨機出來的也相等,所以可以透過Hash或數學的方式產生(ex: $pi$ or $sin$)。
 
-![Value Noise](https://renlai1992.github.io/img/in-post/2018-06-19-Noise/noise_value_noise_fade2.jpg)
-
-## **Perlin Noise**
-
-<!--數學算式寫法參考
-https://goessner.github.io/markdown-it-texmath/markdown-it-texmath-demo.html
--->
-
 ``` csharp
 fixed3 hash33(fixed3 p)
 {
@@ -39,6 +40,15 @@ fixed3 hash33(fixed3 p)
     return -1.0 + 2.0 * frac(fixed3((p.x + p.y) * p.z, (p.x + p.z) * p.y, (p.y + p.z) * p.x));
 }
 ```
+
+![Value Noise](https://renlai1992.github.io/img/in-post/2018-06-19-Noise/noise_value_noise_fade2.jpg)
+
+## **Perlin Noise**
+
+<!--數學算式寫法參考
+https://goessner.github.io/markdown-it-texmath/markdown-it-texmath-demo.html
+-->
+
 
 >$c^2+\sqrt{1+2}$&emsp;**(1)**
 
