@@ -8,10 +8,20 @@ tags:
     - Unity
     - GameMath
 ---
+## **Preface**
+在閱讀場景消融相關文章時,看到其中有個做法是使用3D Noise的方式,來解決直接使用Noise texture,會在不同物體或面的接合處不連續的問題,以往都只是直接上網找texture來使用,決定透過這次機會了解Noise生成的基本原理。
+
+>Dissolving The World  
+>https://connect.unity.com/p/articles-dissolving-the-world-part-2
 
 ## **Value Noise**
+Value Noise算法是基於Lattice的,每個pixel都會在其中一個Lattice中,然後透過對該lattice的所有頂點的顏色進行插直運算,結合緩和曲線,來計算出最後的結果。  
+頂點的數量在n維會有$2^N$個頂點。
 
-## **Perlin Nois**
+關於隨機值得部分,會需要當input相等時,隨機出來的也相等,所以可以透過Hash或數學的方式產生(ex: $pi$ or $sin$)。
+
+
+## **Perlin Noise**
 
 <!--數學算式寫法參考
 https://goessner.github.io/markdown-it-texmath/markdown-it-texmath-demo.html
@@ -29,6 +39,6 @@ fixed3 hash33(fixed3 p)
 }
 ```
 
- $c^2+\sqrt{1+2}$&emsp;**(1)**
-  
- $E = m\cdot{c^2}$&emsp;**(2)**
+>$c^2+\sqrt{1+2}$&emsp;**(1)**
+>
+>$E = m\cdot{c^2}$&emsp;**(2)**
