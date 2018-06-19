@@ -41,5 +41,3 @@ fixed3 hash33(fixed3 p)
 ```
 
 >$c^2+\sqrt{1+2}$&emsp;**(1)**
->
->$E = m\cdot{c^2}$&emsp;**(2)**
