@@ -20,7 +20,7 @@ Value Noise算法是基於Lattice的,每個pixel都會在其中一個Lattice中,
 
 關於隨機值得部分,會需要當input相等時,隨機出來的也相等,所以可以透過Hash或數學的方式產生(ex: $pi$ or $sin$)。
 
-![noise](../img/in-post/2018-06-19-Noise/noise_value_noise_fade2.jpg)
+![noise](https://github.com/renlai1992/img/in-post/2018-06-19-Noise/noise_value_noise_fade2.jpg)
 
 ## **Perlin Noise**
 
